@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be Surprised | Sylonow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0a0a0a;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .bg-electric-purple { background-color: #741EFF; }
+      .text-electric-purple { color: #741EFF; }
+      .border-electric-purple { border-color: #741EFF; }
+      .shadow-neon { box-shadow: 0 0 20px rgba(116, 30, 255, 0.4); }
+      .shadow-neon-pink { box-shadow: 0 0 20px rgba(255, 30, 200, 0.4); }
+      
+      @keyframes scan {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(300%); }
+      }
+      .scanning-line {
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #741EFF, transparent);
+        animation: scan 2s linear infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
