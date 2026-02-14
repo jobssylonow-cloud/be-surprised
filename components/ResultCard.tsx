@@ -66,7 +66,7 @@ const ResultCard: React.FC<ResultCardProps> = ({ data, onReset }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <motion.button
-          onClick={() => window.open('https://instagram.com', '_blank')}
+          onClick={() => window.open('https://instagram.com/sylonow', '_blank')}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="flex items-center justify-center gap-3 bg-[#741EFF] text-white py-4 px-6 rounded-2xl font-bold text-lg transition-all"
